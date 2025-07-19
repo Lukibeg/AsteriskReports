@@ -1,0 +1,61 @@
+/* Rodapé geral */
+.footer {
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+}
+
+/* Linha de separação no rodapé */
+.footer-divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Logo no rodapé */
+.footer-logo-link {
+    display: inline-block;
+}
+
+.footer-logo {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espaço entre a logo e o texto */
+}
+
+/* Texto do rodapé */
+.footer-text {
+    font-size: 0.9rem;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Link no rodapé */
+.footer-text a {
+    color: #2200bd;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(90deg, #001fe6, #1f63ff);
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.ramal-card {
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ramal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ramal-card h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.ramal-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.status-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+
+.status-icon.available {
+    color: #28a745;
+}
+
+.status-icon.in_call {
+    color: #007bff;
+}
+
+.status-icon.paused {
+    color: #dc3545;
+}
+
+.status-icon.no_register {
+    color: #6c757d;
+}
+
+.status-icon:hover {
+    transform: scale(1.1);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.action-button {
+    background: linear-gradient(90deg, #2d2d91, #4b4bf5);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+    background: linear-gradient(90deg, #1e1e73, #2e2ec5);
+    transform: scale(1.05);
+}
+
+.action-button:active {
+    transform: scale(0.95);
+}

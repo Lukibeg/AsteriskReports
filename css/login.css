@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Plano de fundo preto com 10% de transparência */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Isso empurra a footer-note para o fundo */
+    align-items: flex-start;
+    animation: fadeInDown 0.7s ease-out forwards;
+    z-index: 1;
+    /* Garantindo que o container fique no topo */
+}
+
+.logo {
+    display: inline;
+    width: 330px;
+    margin-right: 20px;
+    margin-bottom: -10px;
+    /* Adjusting to make girl-image closer */
+}
+
+.girl-image {
+    display: block;
+    width: 320px;
+    /* Making the girl image bigger */
+    margin-right: 50px;
+}
+
+
+.login-form h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-form p {
+    font-size: 19px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 410px;
+    /* Ajustado para o mesmo valor que os campos de input */
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    /* Centralizar horizontalmente se o container for mais largo que 400px */
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.container::before {
+    content: "";
+    position: fixed;
+    /* Fixado em relação à janela do navegador */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: -1;
+    /* Posicionado atrás do container */
+}
+
+.left-section {
+    width: 40%;
+    /* Definindo explicitamente a largura */
+}
+
+.login-form {
+    flex: 1;
+    /* Fazendo com que ocupe o espaço restante */
+    padding-right: 5%;
+    /* Espaçamento à direita para não colar no canto */
+    margin-left: 14%;
+}
+
+.input-icon-ramal,
+.input-icon-password {
+    position: relative;
+    margin-bottom: 15px;
+    /* Para dar espaço entre os campos */
+}
+
+.input-icon-ramal input,
+.input-icon-password input {
+    padding-left: 45px;
+    /* Espaço para o ícone */
+}
+
+.input-icon-ramal::before {
+    content: "\e7fd";
+    /* Código do ícone para Ramal */
+    font-family: 'Material Icons';
+    /* Família de fontes para o ícone de Ramal */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #999;
+}
+
+.input-icon-password::before {
+    content: "\e897";
+    /* Código do ícone para Senha (ou substitua pelo ícone desejado) */
+    font-family: 'Material Icons';
+    /* Família de fontes para o ícone de Ramal */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #999;
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 30px;
+    /* Isso empurrará a nota de rodapé para a parte inferior do container */
+    padding: 5px 0;
+    /* Adiciona um espaçamento acima e abaixo da nota de rodapé */
+    width: 100%;
+    /* Ocupa todo o espaço horizontal disponível */
+    text-align: center;
+    /* Centraliza o texto dentro da "footer-note" */
+    border-top: 1px solid #cfcfcf;
+    /* Adiciona uma borda superior */
+    padding-top: 15px;
+    /* Espaço entre a borda e o texto */
+}
+
+.naopossuiusuario {
+
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 30px;
+    /* Isso empurrará a nota de rodapé para a parte inferior do container */
+    padding: 5px 0;
+    /* Adiciona um espaçamento acima e abaixo da nota de rodapé */
+    width: 75%;
+    /* Ocupa todo o espaço horizontal disponível */
+    text-align: center;
+    /* Centraliza o texto dentro da "footer-note" */
+    border-top: 1px solid #cfcfcf;
+    /* Adiciona uma borda superior */
+    padding-top: 15px;
+}
+
+.btn-icon {
+    position: relative;
+    /* Isso permite que posicionemos o ícone em relação ao botão */
+}
+
+.btn-icon::before {
+    content: "\e890";
+    /* Código do ícone de login (uma seta para a direita) */
+    font-family: 'Material Icons';
+    position: absolute;
+    left: 15px;
+    /* Posicionamento da esquerda */
+    top: 50%;
+    /* Centralizar verticalmente */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+    /* Mesma cor do texto do botão */
+}
+
+.btn-icon-error {
+    padding: 12px 20px !important;
+    margin-top: 5px !important;
+    background-color: #ff4136 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s !important;
+    width: 100% !important;
+    max-width: 410px !important;
+    display: block !important;
+    font-size: 15px !important;
+    margin: 1 auto !important;
+}
+
+.btn-icon-error:hover {
+    background-color: #ff1103;
+    /* Tonalidade mais escura de vermelho ao passar o mouse */
+}
+
+.icon-error::before {
+    content: "\eb7a";
+    /* Código do ícone para senha incorreta */
+    font-family: 'Material Icons';
+    /* Família de fontes para ícones */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+    /* Cor do ícone */
+}
+
+/* Aplique a fonte 'Inter' aos botões */
+.btn-icon,
+.btn-icon-error {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}

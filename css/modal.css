@@ -1,0 +1,262 @@
+/* Fundo do modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Fundo com transparência */
+    display: none;
+    /* Inicialmente oculto */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Conteúdo do modal */
+.modal-content {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    max-width: 500px;
+    /* Largura máxima */
+    width: 100%;
+    /* Ajusta automaticamente */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    /* Sombra para destaque */
+    overflow: hidden;
+    /* Garante que o conteúdo não exceda */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    transform: scale(0.95);
+    opacity: 0;
+    animation: slideIn 0.3s ease forwards;
+    /* Animação para entrada */
+}
+
+/* Animação de entrada */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botão de fechar no modal */
+.close {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+/* Título do modal */
+.modal-content h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Parágrafo descritivo do modal */
+.modal-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo da tabela */
+.modal-content .table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.modal-content .table th,
+.modal-content .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.modal-content .table th {
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+/* Inputs do modal */
+.modal-content .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.modal-content .form-control:focus {
+    border-color: #2200bd;
+}
+
+/* Botão do modal */
+.modal-content .btn-primary {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2200bd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px auto;
+    display: block;
+}
+
+.modal-content .btn-primary:hover {
+    background-color: #1b009b;
+}
+
+/* Cabeçalho do título do modal */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2200bd;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Centraliza o texto no cabeçalho */
+.header-title {
+    flex: 1;
+    text-align: center;
+}
+
+/* Modal-footer - garante que o botão fique visível */
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    /* Centraliza o botão no rodapé */
+    padding: 15px;
+    /* Adiciona espaçamento */
+    background-color: #f9f9f9;
+    /* Fundo claro para separar do conteúdo */
+    border-top: 1px solid #ddd;
+    /* Linha para separar o rodapé */
+}
+
+/* Botão Salvar Alterações */
+.modal-footer .btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2200bd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #1b009b;
+}
+
+
+.modal-editar,
+.modal-adicionar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Fundo com transparência */
+    display: none;
+    /* Inicialmente oculto */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
+.modal-editar-content {
+    position: relative;
+    background-color: white;
+    /* Bordas arredondadas */
+
+    border-radius: 10px;
+    /* Largura máxima */
+    width: 75%;
+    /* Ajusta automaticamente */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    /* Sombra para destaque */
+    overflow: hidden;
+    /* Garante que o conteúdo não exceda */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    transform: scale(0.95);
+    opacity: 0;
+    animation: slideIn 0.3s ease forwards;
+    /* Animação para entrada */
+    margin-top: 75px;
+
+}
+
+
+.addUser {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-style: none;
+}
+
+.botaoAdicionar {
+    transition: color 0.3s ease;
+    float: right;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botaoAdicionar:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.2);
+}
+

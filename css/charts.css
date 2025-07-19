@@ -1,0 +1,36 @@
+#chartContainerNivelServico {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Espaçamento entre os gráficos */
+}
+
+.chart {
+    flex: 1;
+    /* Os gráficos ocupam o mesmo espaço */
+    max-width: 1200px;
+    /* Ajuste conforme necessário */
+}
+
+
+/* Gráficos ocupar a largura total */
+/* Garantir que os canvas ocupem todo o contêiner */
+canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+#causaChart {
+    max-width: 600px;
+    /* Largura máxima do gráfico */
+    max-height: 600px;
+    /* Altura máxima do gráfico */
+    width: 100%;
+    /* Largura ajustável para responsividade */
+    height: auto;
+    /* Altura proporcional */
+    margin: 0 auto;
+    /* Centraliza o canvas */
+}

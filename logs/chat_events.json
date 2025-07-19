@@ -1,0 +1,146 @@
+{
+    "PJSIP\/6008": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6000": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/7002": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/6019": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/6006": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/6005": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6007": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6004": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6012": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/6017": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/6014": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/6011": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/6016": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6010": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6015": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/71": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/72": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/73": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/74": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/75": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/76": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/77": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/78": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/70": {
+        "status": "available",
+        "reason": ""
+    },
+    "PJSIP\/6001": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6002": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6003": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6009": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6013": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6018": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6020": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6021": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6022": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/6023": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/7000": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    },
+    "PJSIP\/7001": {
+        "status": "no_register",
+        "reason": "Sem Registro"
+    }
+}

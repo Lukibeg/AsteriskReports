@@ -1,0 +1,36 @@
+/* Pré carregamento da página */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; /* Cor de fundo branca */
+    z-index: 9999;
+    opacity: 0; /* Começa com opacidade 0 para ocultar */
+    transition: opacity 0.3s ease; /* Efeito de transição suave */
+    pointer-events: none; /* Não captura eventos de clique */
+
+  }
+
+  .preloader.active {
+    opacity: 1; /* Aumenta a opacidade para exibir gradualmente */
+    
+  }
+
+  .lds-ripple {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+  }
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+  /*Preloader Encerra aqui */

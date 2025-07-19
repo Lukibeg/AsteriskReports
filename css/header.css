@@ -1,0 +1,369 @@
+/* Container geral do cabeçalho */
+header {
+    position: relative;
+    height: 70px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #001fe6, #1f63ff);
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+/* Título principal no cabeçalho */
+.tituloprincipal {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, #001fe6, #1f63ff);
+    line-height: 2em;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Logo */
+/* #logo {
+    width: 10%;
+    text-align: center;
+} */
+
+/* Container para os itens do menu */
+#itens {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 85%;
+}
+
+/* Container do botão e caption */
+#itens li {
+    position: relative;
+}
+
+/* Estilo dos botões */
+.menu-item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+/* Hover no botão */
+.menu-item:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo dos ícones */
+.menu-item .material-icons {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover .material-icons {
+    color: #000;
+}
+
+/* Estilo dos captions */
+#capInicio,
+#capSair,
+#capAtendidas,
+#capNaoatendidas,
+#capPesquisar,
+#capAgentes {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 9999;
+}
+
+#itens li:hover div {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Submenu */
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    /* Define o submenu como um bloco manipulável */
+    opacity: 0;
+    /* Invisível por padrão */
+    visibility: hidden;
+    /* Remove do fluxo visual */
+    transform: translateY(-10px);
+    /* Leve deslocamento inicial */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    /* Suaviza todas as mudanças */
+    z-index: 10;
+    min-width: 150px;
+}
+
+/* Exibe o submenu */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    /* Torna visível */
+    visibility: visible;
+    /* Garante exibição */
+    transform: translateY(0);
+    /* Remove o deslocamento */
+}
+
+/* Oculta o submenu suavemente */
+.dropdown:not(:hover) .dropdown-menu {
+    opacity: 0;
+    /* Invisível */
+    visibility: hidden;
+    /* Remove visualmente */
+    transform: translateY(-10px);
+    /* Retorna o deslocamento */
+}
+
+
+/* Itens do submenu */
+.dropdown-menu li {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #ddd;
+}
+
+.dropdown-menu li .material-icons {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    text-wrap: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    color: #000;
+}
+
+/* Recém implantado 14/01/2025 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    /* Remove scroll horizontal */
+    max-width: 100vw;
+    /* Limita o conteúdo à largura da viewport */
+}
+
+
+.tituloscontainer {
+    border: 2px solid #ddd;
+    box-shadow: 3px 3px 3px #ddd;
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.container {
+    max-width: 100%;
+    /* Garante que o container não ultrapasse o viewport */
+    margin: 0 auto;
+    /* Centraliza o conteúdo */
+}
+
+
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    #cabecalho {
+        height: auto;
+        /* Permite que a altura do cabeçalho se ajuste automaticamente */
+        padding-bottom: 20px;
+        /* Adiciona espaço extra abaixo do cabeçalho */
+        display: flex;
+        flex-direction: column;
+        /* Alinha os itens do cabeçalho verticalmente */
+        align-items: center;
+        /* Centraliza os itens do cabeçalho */
+    }
+
+    #itens {
+        flex-direction: row;
+        /* Alinha os itens horizontalmente */
+        justify-content: center;
+        /* Centraliza os itens horizontalmente */
+        width: 100%;
+        /* Faz com que os itens ocupem toda a largura disponível */
+        gap: 5px;
+        /* Ajusta o espaçamento entre os itens */
+        box-sizing: border-box;
+        /* Inclui padding e border no tamanho total do elemento */
+    }
+
+
+    .container {
+        padding: 10px;
+        width: 100%;
+        /* Ajusta a largura */
+        overflow-x: hidden;
+        /* Remove scroll horizontal */
+    }
+
+    .menu {
+        flex-direction: row;
+        /* Alinha os botões horizontalmente */
+        align-items: center;
+        /* Centraliza os botões */
+        width: 100%;
+        /* Faz com que os botões ocupem toda a largura disponível */
+        background-color: #fff;
+        /* Define a cor de fundo do menu */
+        z-index: 1;
+        /* Garante que o menu fique acima de outros elementos */
+        box-sizing: border-box;
+        /* Inclui padding e border no tamanho total do elemento */
+    }
+
+    .menu-button {
+        padding: 5px;
+        /* Diminui o padding dos botões */
+        font-size: 9px;
+        /* Diminui o tamanho da fonte dos botões */
+        flex: 1;
+        /* Faz com que os botões ocupem a mesma largura */
+        box-sizing: border-box;
+        /* Inclui padding e border no tamanho total do elemento */
+    }
+}
+
+/* Ajuste global para telas pequenas */
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+        /* Remove o scroll horizontal */
+        max-width: 100vw;
+        /* Limita a largura ao viewport */
+    }
+
+    .container,
+    header,
+    .menu,
+    #itens {
+        width: 100%;
+        /* Garante que os elementos se ajustem à largura da tela */
+        padding: 0 10px;
+        /* Remove paddings que podem causar overflow */
+        margin: 0 auto;
+        /* Centraliza o conteúdo */
+    }
+
+    /* Ajustando botões do menu */
+    .menu-item {
+        flex-shrink: 1;
+        /* Evita que os botões se "estiquem" */
+        width: 35px;
+        /* Reduz o tamanho dos botões */
+        height: 35px;
+        /* Para caber melhor em telas pequenas */
+    }
+
+    /* Ajustando captions (rótulos dos botões) */
+    #itens li:hover div {
+        font-size: 10px;
+        /* Reduz tamanho das legendas */
+        top: 40px;
+        /* Ajusta posição das legendas */
+    }
+
+    /* Ajustando o título principal no cabeçalho */
+    .tituloprincipal {
+        font-size: 1.2em;
+        /* Reduz tamanho do texto */
+        padding: 10px;
+        /* Reduz o espaço interno */
+        line-height: 1.5em;
+        /* Ajusta a altura da linha */
+    }
+
+    /* Ajustando o submenu */
+    .dropdown-menu {
+        min-width: 120px;
+        /* Reduz largura mínima do submenu */
+    }
+
+    .dropdown-menu li {
+        font-size: 12px;
+        /* Reduz tamanho do texto */
+        padding: 6px 10px;
+        /* Ajusta espaço interno */
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Remove o scroll horizontal */
+    max-width: 100vw; /* Garante que o body não ultrapasse o viewport */
+}
+
+
+.container, .menu {
+    max-width: 100%; /* Ajusta para o tamanho do viewport */
+}

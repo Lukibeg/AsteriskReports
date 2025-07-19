@@ -1,0 +1,12 @@
+{
+    "require": {
+        "php": ">=7.4 <8.0",
+        "setasign/fpdf": "^1.8",
+        "phpoffice/phpspreadsheet": "^1.23"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    }
+}

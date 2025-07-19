@@ -1,0 +1,42 @@
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        /* Muda para coluna em telas menores */
+    }
+
+    .column {
+        flex: 1 1 100%;
+        max-width: 100%;
+        /* Ocupa 100% da largura */
+    }
+
+    .button-container input[type="submit"] {
+        width: 100%;
+    }
+}
+
+
+/* Estilo adicional para melhorar a aparência */
+select option {
+    padding: 5px;
+}
+
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus {
+    outline: none;
+    border-color: #08004cd1;
+    box-shadow: 0 0 5px rgba(8, 0, 76, 0.5);
+}
+
+
+#myAudio {
+    width: 20px;
+}
+
+#recModal-body {
+    margin: auto;
+    padding: 20px;
+}

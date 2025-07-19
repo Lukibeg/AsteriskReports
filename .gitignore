@@ -1,0 +1,55 @@
+# ------------------------------
+# Sistema Operacional
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Ambientes e configuração local
+# ------------------------------
+.env
+.env.local
+.env.*.local
+
+# ------------------------------
+# Diretórios de dependências
+# ------------------------------
+/vendor/
+
+# ------------------------------
+# Composer
+# ------------------------------
+composer.lock
+
+# ------------------------------
+# IDEs e editores
+# ------------------------------
+.vscode/
+*.code-workspace
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------
+# Arquivos temporários e de cache
+# ------------------------------
+*.log
+*.tmp
+*.cache
+*.bak
+*.swp
+*.swo
+
+# ------------------------------
+# Banco de dados local
+# ------------------------------
+*.sqlite
+*.sqlite3
+*.sql
+
+# ------------------------------
+# Diretórios temporários (caso existam)
+# ------------------------------
+/cache/
+/tmp/
+/uploads/
