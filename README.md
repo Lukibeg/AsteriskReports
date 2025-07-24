@@ -33,9 +33,6 @@ O **AsteriskReports** foi desenvolvido para fornecer uma interface simples e fun
 - **JavaScript puro**
 - **Asterisk** (origem dos dados: `queue_log`)
 
-### 📁 Estrutura do projeto
-
-
 
 
 ---
