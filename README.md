@@ -1,4 +1,4 @@
-# ATTENTION ⚠️ THIS IS MY FIRST PROJECT MADE IN 2023 SO, I MUST APOLOGIZE 
+# ATTENTION ⚠️ THIS IS MY FIRST PROJECT MADE IN 2023 SO, I MUST APOLOGIZE FOR THE PROJECTE STRUCTURE
 
 # AsteriskReports 📊
 
@@ -31,7 +31,7 @@ O **AsteriskReports** foi desenvolvido para fornecer uma interface simples e fun
 - **JavaScript puro**
 - **Asterisk** (origem dos dados: `queue_log`)
 
-### 📁 Estrutura do projeto (exemplo)
+### 📁 Estrutura do projeto
 
 
 
@@ -62,6 +62,4 @@ O **AsteriskReports** foi desenvolvido para fornecer uma interface simples e fun
 - **HTML + CSS**
 - **Vanilla JavaScript**
 - **Asterisk** (`queue_log` as data source)
-
-### 📁 Project structure (example)
 
