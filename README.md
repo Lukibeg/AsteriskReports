@@ -1,5 +1,6 @@
 # ATTENTION ⚠️ THIS IS MY FIRST PROJECT MADE IN 2023, SO I MUST APOLOGIZE FOR THE PROJECT STRUCTURE. IN FACT, THIS PROJECT IS IN THE REFACTORING PHASE.
 # ATENÇÃO ⚠️ ESTE É MEU PRIMEIRO PROJETO FEITO EM 2023, ENTÃO, DEVO ME DESCULPAR PELA ESTRUTURA DO PROJETO. NA VERDADE, ESTE PROJETO ESTÁ EM FASE DE REFATORAÇÃO.
+** Este projeto ainda não possui um padrão de arquitetura implementado e nem segue um padrão de design, nessa refatoração o intuito seria aplicar a Arquitetura Monolítica com API RESTful a este projeto.
 
 
 # AsteriskReports 📊
